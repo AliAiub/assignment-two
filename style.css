@@ -1,7 +1,12 @@
+/*-------------------------------
+        Heading Design 
+ ----------------------------------*/
 nav{
   display: flex;
   justify-content: space-between;
   font-size: 1.5em;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 nav a{
   color: black;
@@ -13,4 +18,181 @@ nav a{
 }
 .menu-logo{
   margin-top: 25px;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*-------------------------------
+        Influencer Design 
+ ----------------------------------*/
+.influencer-section{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+
+  font-family: 'Roboto', sans-serif;
+}
+.influencer{
+width: 600px;
+margin-top: 50px;
+margin-left: 60px;
+
+}
+#order-1{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+
+  }
+  #order-2{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+.influencer h1{
+  font-size: 3.5em;
+  opacity: .8;
+}
+.influencer p{
+  padding: 5px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.influencer img{
+  width: 100%;
+  background-image: url(images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-size: 94%;
+}
+
+.button{
+  font-size: 2em;
+  text-decoration: none;
+  color: aliceblue;
+  background-color:	#c71585;
+  padding: 5px 30px;
+  margin: 30px 0px;
+  border-radius: 35px;
+}
+.button i{
+  padding-left: 15px;
+  font-size: .80em;
+}
+/*-------------------------------
+        E-commerce Design 
+ ----------------------------------*/
+.e-commerce{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  margin-top: 40px;
+  border-top: 2px inset gray;
+  border-bottom: 2px inset gray;
+  border-radius: 2px;
+}
+.e-commerce img{
+width: 100px;
+height: 40px;
+margin: 15px;
+}
+
+/*-------------------------------
+        Collection Design 
+ ----------------------------------*/
+.collection{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+ .collector{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+  font-family: 'Roboto', sans-serif;
+  padding: 15px;
+  margin: 10px;
+}
+.collection-title{
+  font-size: 35px;
+  text-align: center;
+}
+.collection-box{
+display: grid;
+padding: 20px;
+margin: 10px;
+background-color: honeydew;
+border-radius: 15px;
+box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
+}
+
+.collection-box .pic img{
+  width: 300px;
+  height: 256px;
+}
+.star-rate{
+  font-size: 16px;
+  font-weight: 700;
+}
+.fa-star{
+  font-size: 12px;
+  color: #ffc014;
+  }
+.fa-star-half-alt{
+  font-size: 12px;
+  color: #ffc014;
+}
+
+.button-2{  
+  font-size: 1.3em;
+  text-align: right;
+  color:	#c71585;
+}
+
+/*-------------------------------
+        Footer Design 
+ ----------------------------------*/
+.footer{
+  color: #f5fffa;
+  background-color: #080836;
+  text-align: center;
+  padding: 25px;
+}
+.footer .footer-logo i{
+  color: white;
+  background-color: gray;
+  border: 5px;
+  border-radius: 20PX;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+/*-------------------------------
+        Responsive Design 
+ ----------------------------------*/
+ @media (max-width: 688px){
+  .collection{
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  .heahing{
+    margin-left: 0;
+
+  }
+}
+@media (min-width: 688px) and (max-width: 992px){
+  .container{
+    width: 100%;
+    background-color: greenyellow;
+  }
+  .collection{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
