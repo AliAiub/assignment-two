@@ -195,7 +195,7 @@ box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
   font-size: 1.3em;
 }
 .product-right a{
-  text-align: ;
+  text-align: center;
 }
 
 /*-------------------------------
@@ -263,6 +263,9 @@ box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .influencer{
+    margin: 60px 2%;
+  }
   .influencer-left{
     order: 2;
   }
@@ -273,17 +276,25 @@ box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
     font-size: 3em;
   }
 
+  .collection-box .pic img{
+    width: 256px;
+    height: 200px;
+  }
+
+  .products{
+    margin: 40px 2%;
+  }
   .e-commerce{
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
     height: 100px;
-    margin: 40px 5%;
+    margin: 0;
     border-top: none;
     border-bottom: none;
   }
   .e-commerce img{
-    width: 80px;
+    width: 75px;
     height: 30px;
     margin: 10px;
     }
