@@ -219,7 +219,7 @@ box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
 /*-------------------------------
         Responsive Design 
  ----------------------------------*/
- @media (max-width: 688px){
+ @media (max-width: 600px){
   nav{
     font-size: 1.3em;
   }
@@ -289,7 +289,7 @@ box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
     }
 }
 
-@media (min-width: 688px) and (max-width: 992px){
+@media (min-width: 600px) and (max-width: 992px){
   .menu-heading{
     font-size: 1.5em;
   }
