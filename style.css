@@ -20,7 +20,16 @@ nav a{
 }
 .menu-logo{
   margin-top: 20px;
-  display: block;
+}
+.fa-shopping-cart{
+ position: relative;
+ margin-top: 20px;
+}
+#nav-toggler{
+  display: none;
+}
+.nav-toggler-icon{
+  display: none;
 }
 main{
   display: flex;
@@ -61,7 +70,7 @@ main{
 .influencer-left p{
   padding: 5px;
   margin-bottom: 10px;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 .influencer-right img{
   width: 100%;
@@ -211,11 +220,50 @@ box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
         Responsive Design 
  ----------------------------------*/
  @media (max-width: 688px){
+  nav{
+    font-size: 1.3em;
+  }
+  .menu-heading{
+    font-size: 1.5em;
+  }
+  .menu-logo{
+    margin-top: 20px;
+  }
+  .nav-toggler-icon{
+    display: block;
+  }
+  .nav-toggler-icon .fa-bars{
+    left: 0;
+  }
+  .menu-logo {
+    position: fixed;
+    top: 20px;
+    right: 0;
+    width: 12%;
+    align-items: center;
+    background-color: grey;
+    border-radius: 5px;
+    transform: translateY(-220px);
+    transition: .5s ease-in-out;
+  }
+  #nav-toggler:checked ~ .menu-logo{
+    transform: translateY(0px);
+  }
+
+  .fa-shopping-cart{
+    margin-top: 0px;
+  }
   .influencers, .collection, .featured, .e-commerces{
     width: 100%;
   }
   .influencer, .collector, .products{
     grid-template-columns: repeat(1, 1fr);
+  }
+  .influencer-left{
+    order: 2;
+  }
+  .influencer-right{
+    order: 1;
   }
   .e-commerce{
     grid-template-columns: repeat(4, 1fr);
@@ -234,11 +282,53 @@ box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
 }
 
 @media (min-width: 688px) and (max-width: 992px){
-  .container{
-    width: 100%;
-    background-color: greenyellow;
+  .menu-heading{
+    font-size: 1.5em;
   }
-  .collection{
-    grid-template-columns: repeat(1, 1fr);
+  .menu-logo{
+    margin-top: 20px;
+  }
+  .nav-toggler-icon{
+    display: block;
+    left: 0;
+  }
+  .nav-toggler-icon .fa-bars{
+    left: 0;
+  }
+  .menu-logo {
+    position: fixed;
+    top: 20px;
+    right: 0;
+    width: 12%;
+    align-items: center;
+    background-color: grey;
+    border-radius: 5px;
+    transform: translateY(-220px);
+    transition: .5s ease-in-out;
+  }
+  #nav-toggler:checked ~ .menu-logo{
+    transform: translateY(0px);
+  }
+
+  .fa-shopping-cart{
+    margin-top: 0px;
+  }
+  .influencers, .collection, .featured, .e-commerces{
+    width: 100%;
+  }
+  .influencer, .collector, .products{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .influencer-left p{
+    font-size: 1.8em;
+  }
+  .collection-box .pic img{
+    width: 256px;
+    height: 200px;
+  }
+  .e-commerce{
+    grid-template-columns: repeat(5, 1fr);
+    border-top: none;
+    border-bottom: none;
   }
 }
