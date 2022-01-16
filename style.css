@@ -229,12 +229,14 @@ box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
   .menu-logo{
     margin-top: 20px;
   }
+
   .nav-toggler-icon{
     display: block;
   }
   .nav-toggler-icon .fa-bars{
     left: 0;
   }
+
   .menu-logo {
     position: fixed;
     top: 20px;
@@ -246,19 +248,21 @@ box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
     transform: translateY(-220px);
     transition: .5s ease-in-out;
   }
+
   #nav-toggler:checked ~ .menu-logo{
     transform: translateY(0px);
   }
-
   .fa-shopping-cart{
     margin-top: 0px;
   }
+
   .influencers, .collection, .featured, .e-commerces{
     width: 100%;
   }
   .influencer, .collector, .products{
     grid-template-columns: repeat(1, 1fr);
   }
+
   .influencer-left{
     order: 2;
   }
@@ -268,6 +272,7 @@ box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
   .influencer-left h1{
     font-size: 3em;
   }
+
   .e-commerce{
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
@@ -291,12 +296,14 @@ box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
   .menu-logo{
     margin-top: 20px;
   }
+
   .nav-toggler-icon{
     display: block;
   }
   .nav-toggler-icon .fa-bars{
     left: 0;
   }
+
   .menu-logo {
     position: fixed;
     top: 20px;
@@ -315,22 +322,26 @@ box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
   .fa-shopping-cart{
     margin-top: 0px;
   }
+
   .influencers, .collection, .featured, .e-commerces{
     width: 100%;
   }
   .influencer, .collector, .products{
     grid-template-columns: repeat(2, 1fr);
   }
+
   .influencer-left h1{
     font-size: 3em;
   }
   .influencer-left p{
     font-size: 1.8em;
   }
+
   .collection-box .pic img{
     width: 256px;
     height: 200px;
   }
+  
   .e-commerce{
     grid-template-columns: repeat(5, 1fr);
     border-top: none;
